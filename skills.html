@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Drew</a>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="about.html" >About Me</a>
+            <a href="skills.html" >Skills</a>
+            <a href="exp.html" >Experience</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpeg" alt="">
+        </div>
+        <div class="home-content">
+            <h3>What I've done: </h3>
+            <p><i class="fa fa-star" aria-hidden="true"></i> Configuration DHCP Server <br>
+            <i class="fa fa-star" aria-hidden="true"></i> Configuration VLAN and Trunking <br>
+            <i class="fa fa-star" aria-hidden="true"></i> Configuration DNS Local Server <br>
+            <i class="fa fa-star" aria-hidden="true"></i> Build Website Statis and Dinamis</p>
+        </div>
+    </section>
+</body>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.querySelector("nav");
+
+  menuToggle.onclick = () => {
+    nav.classList.toggle("active");
+  };
+</script>
+
+</html>
