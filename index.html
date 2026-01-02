@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio Website</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Drew</div>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" >About Me</a>
+            <a href="skills.html" >Skills</a>
+            <a href="exp.html" >Experience</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpeg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Dru</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Stay Focused!</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/drupadi-prameswari-68851638a"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/drupadiprameswari"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:drupadiprameswari8@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/drupadiprmswr/#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="https://wa.me/628567348720" class="btn">Contact me</a>
+        </div>
+    </section>
+</body>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.querySelector("nav");
+
+  menuToggle.onclick = () => {
+    nav.classList.toggle("active");
+  };
+</script>
+
+</html>
